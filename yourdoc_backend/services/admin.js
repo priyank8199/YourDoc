@@ -46,7 +46,6 @@ async function approveDoctor(userId) {
 }
 
 async function rejectDoctor(userId) {
-
   const update = await db.query(
     `DELETE FROM doctor WHERE user_id="${userId}"`
   );

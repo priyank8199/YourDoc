@@ -4,7 +4,6 @@ import Img2 from '../../photos/gallery1.jpg'
 
 function Contact() {
     return (
-        <>
         <div className="bg-dark">
             <Navbar />
             <div class="flex max-w-full" style={{ height: '500px' }}>
@@ -84,7 +83,7 @@ function Contact() {
             </div>
             <Footer />
         </div>
-        </>
     );
+
 }
 export default Contact;
