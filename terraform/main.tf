@@ -21,7 +21,7 @@ provider "azurerm" {
 # Create Resource Group
 resource "azurerm_resource_group" "yourdoc-rg" {
   name     = "azure-deploy-rg"
-  location = "Canada Central"
+  location = "Canada East"
 }
 
 # Create App Service Plan
