@@ -5,6 +5,14 @@ terraform {
       version = "~> 3.87.0"
     }
   }
+
+
+  backend "azurerm" {
+    resource_group_name  = "Deployment"
+    storage_account_name = "yourdoctfstate" 
+    container_name       = "tfstate"
+    key                  = "yourdoc.tfstate"
+  }
 }
 
 provider "azurerm" {
