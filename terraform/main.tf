@@ -21,7 +21,7 @@ provider "azurerm" {
 # Create Resource Group
 resource "azurerm_resource_group" "yourdoc-rg" {
   name     = "azure-deploy-rg"
-  location = "East US"
+  location = "Canada Central"
 }
 
 # Create App Service Plan
@@ -44,6 +44,6 @@ resource "azurerm_linux_web_app" "yourdoc-ap" {
     application_stack {
       node_version = "22-lts"
     }
-    always_on = true
+    always_on = false
   }
 }
