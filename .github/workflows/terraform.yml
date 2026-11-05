@@ -14,7 +14,7 @@ env:
   ROOT_PATH: '${{ github.workspace }}/terraform'
   AZURE_WEBAPP_NAME: 'yourdoc-webapp'  
   AZURE_WEBAPP_PACKAGE_PATH: './build'      
-  NODE_VERSION: '16.x'
+  NODE_VERSION: '22.x'
 
 jobs:
   terraform_plan:
