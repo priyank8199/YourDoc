@@ -126,6 +126,8 @@ jobs:
     
     - name: 'npm install and build'
       working-directory: ${{ env.FRONTEND_DIR }}
+      env:
+          CI: false
       run: |
         npm install
         npm run build --if-present
